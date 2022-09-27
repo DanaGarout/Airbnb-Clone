@@ -1,2 +1,2 @@
 This is airbnb clone. 
-![My Image](images/display.png)
+![My Image](public/images/display.pngimages)
