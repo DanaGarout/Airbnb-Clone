@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.main-content{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.photo-grid{
+    width: 100%;
+}
+.text{
+    text-align: left;
+    padding: 5px;
+    width: 600px;
+}
+.title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    
+    
+}
+.paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #222222;
+        
+}
