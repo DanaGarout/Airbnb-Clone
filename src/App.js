@@ -3,24 +3,29 @@ import './App.css';
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import Card from './components/Card';
+import dataCard from "./data"
+
 
 function App() {
+  const cardDetails = dataCard.map(function(data){
+    return (
+      <Card 
+        key = {data.id}
+        data= {data}
+        />
+    )
+   })
   return (
     <div className="App">
      <Navbar />
      <MainContent />
-     <Card img="katie-zaferes.png"
-          rating="5.0"
-          reviewCount={6}
-          country="USA"
-          title="Life Lessons with Katie Zaferes"
-          price={136}/>
-          <Card img="katie-zaferes.png"
-          rating="5.0"
-          reviewCount={6}
-          country="USA"
-          title="Life Lessons with Katie Zaferes"
-          price={136}/>
+     <section className='cards-list'>
+     {cardDetails}
+     </section>
+     
+    
+     
+          
     </div>
   );
 }
